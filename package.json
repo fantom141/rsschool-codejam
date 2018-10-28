@@ -1,9 +1,13 @@
 {
   "name": "rsschool-codejam",
   "version": "1.0.0",
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint src --fix --ignore-path .eslintignore",
+    "all-tests": "npm run sum-of-other-test",
+    "sum-of-other-test": "mocha src/sum-of-other/test.js"
+  },
   "devDependencies": {
-    "eslint": "^5.8.0",
+    "eslint": "^5.3.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "mocha": "^5.2.0"
